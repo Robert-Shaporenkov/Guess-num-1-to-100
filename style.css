@@ -12,7 +12,7 @@ body {
     width: 40%;
     padding: 20px;
     background-color: white;
-    height: 30vh;
+    height: 32vh;
     border-radius: 30px;
     text-align: center;
 }
@@ -55,9 +55,10 @@ body {
     margin-bottom: 10px;
 }
 
-#submitGuess:hover {
-    background-color: darkblue;
-    cursor: pointer;
+#submitGuess:disabled,
+#resetGame:disabled {
+    cursor: not-allowed;
+    opacity: 0.6; /* Optional: visually indicate disabled state */
 }
 
 #result {
